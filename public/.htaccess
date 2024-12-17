@@ -1,0 +1,10 @@
+# Bật chế độ Rewrite
+RewriteEngine On
+
+# Điều kiện để không áp dụng rewrite nếu là tệp hoặc thư mục thật
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteBase /MVCPHP/
+
+# Tất cả các yêu cầu còn lại được chuyển hướng tới index.php
+RewriteRule ^(.*)$ index.php?url=$1

@@ -1,0 +1,84 @@
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.form-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-container input:focus, .form-container select:focus {
+    border-color: rgb(189, 51, 77);
+    outline: none;
+    box-shadow: 0 0 5px rgba(189, 51, 77, 0.5);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(189, 51, 77);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: rgb(196, 82, 97);
+}
+
+.form-container select {
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container br {
+    clear: both;
+}
+
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.form-container textarea:focus {
+    border-color: rgb(189, 51, 77);
+    outline: none;
+    box-shadow: 0 0 5px rgba(189, 51, 77, 0.5);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Khoảng trống giữa các button */
+}
